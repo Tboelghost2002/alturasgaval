@@ -1,0 +1,213 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>navbar Dos</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+  <div> 
+      <span class="overlay"> <a class="nav-link" href="https://www.google.com/maps/dir//GAVAL+CURSOS+DE+ALTURAS,+CARRERA+69+BIS+%23+31-31+SUR+BARRIO,+Bogot%C3%A1/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e3f9f296d2b89c1:0x6beabe943617d821?sa=X&ved=2ahUKEwiN3p3ox--BAxUJm2oFHYC5A9YQ48ADegQIDxAA&ved=2ahUKEwiN3p3ox--BAxUJm2oFHYC5A9YQ48ADegQIHRAK">Cra. 69 Bis # 31- 31 Sur Bogotà, Colombia</a>
+          <span>         <div> <a href="https://api.whatsapp.com/send?phone=3143829719&text=Hola alturas gaval, estoy interesado en sus cursos"><img class="logo" src="../Imagenes/whatsapp.png" alt=""></a>
+              <a href="https://www.facebook.com/alturas.gaval"><img class="logofacebook" src="../Imagenes/facebook.png" alt=""></a>  </div>   </span>
+      </span>     
+      
+      
+              
+  </div>
+          
+    
+  <header class="header">
+      <div class="logo">
+          <img  src="../Imagenes/logo.png" alt="Logo empresa">
+      </div>
+      <nav>
+        <ul class="nav-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+              <a class="boton" href="#"><button>CURSOS</button></a>
+              <li><a href="Otros.html">Otros Servicios</a></li>
+        </ul>            
+      </nav>
+      <a class="btn" href="#"><button>CONTACTENOS</button></a>
+      <a class="btn" href="https://app2.mintrabajo.gov.co/CentrosEntrenamiento/consulta_ext.aspx"><button>CONSULTA CERTIFICADO</button></a>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+      <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+          <div class="overlay-content">
+              <a href="#">INICIO</a>
+              <a href="#">SOBRE NOSOTROS</a>
+              <a href="#">CURSOS</a>
+              <a href="#">CONTACTENOS</a>
+          </div>
+      </div>
+
+  </header>
+  <script type="text/javascript" src="../js/nav.js"></script>
+  </head>
+  
+  <body>
+    <h3 class="title">TUS CURSOS AQUI</h3>
+      <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="../Imagenes/imagen14.jpg" alt="img" draggable="false"></div>
+              <h2>Trabajador autorizado</h2>
+              <span>Duración: 8 horas</span>
+              <a class="btn" href="#"><button id="btn-abrir-modal_BasicoOperativo">VER MÁS</button></a>
+              <dialog  id="modalBasicoOperativo">
+                <h1>Trabajador autorizado</h1>
+                <h1>DURACION: 32 HORAS</h1>
+                <h1></h1>
+                <h4>Requisitos:</h4>
+                <h1></h1>
+                <p>Fotocopia cedula de ciudadanía.</p>
+                <p>Planilla pago seguridad social y ARL</p>
+                <h1></h1>
+                <h4>Descripción</h4>
+               <p>Trabajadores que realizan trabajo en alturas y
+                 aprendices de las instituciones de capacitación y 
+                 educación para el trabajo y el SENA, quienes deben
+                  ser formados y entrenados por la misma institución, 
+                cuando cursen programas cuya práctica implique riesgo de caída en alturas.</p>
+  
+                <button id="btn_cerrar_modal">Cerrar</button>
+                  <a href="https://api.whatsapp.com/send?phone=3136106128&text=Hola alturas gaval, estoy interesado en su curso de capacitación de Trabajador autorizado"><button id="">Preguntar</button></a>
+                
+                
+              
+                </dialog>
+
+            </li>
+            <li class="card">
+              <div class="img"><img src="../Imagenes/imagen15.jpg" alt="img" draggable="false"></div>
+              <h2 class="largo">Jefes de área para trabajos en alturas</h2>
+              <span>Duración: 8 horas</span>
+              <a class="btn" href="#"><button id="btn-abrir-modal_Parajefes">VER MÁS</button></a>
+              <dialog  id="modalJefes">
+              <h1>JEFES DE ÁREA</h1>
+              <h1>DURACION: 8 HORAS</h1>
+              <h1></h1>
+              <h4>Requisitos:</h4>
+              <h1></h1>
+              <p>Fotocopia cedula de ciudadanía.</p>
+              <p>Planilla pago seguridad social y ARL</p>
+              <h1></h1>
+              <h4>Descripción</h4>
+             <p>Personas que tomen decisiones administrativas en relación 
+              con la aplicación de esta resolución en empresas en las que
+               se haya identificado como prioritario el riesgo de caída por 
+               trabajo en alturas.</p>
+
+               <button id="btn_cerrar_modal">Cerrar</button>
+               <a href="https://api.whatsapp.com/send?phone=3136106128&text=Hola alturas gaval, estoy interesado En la capacitación Jefes de area"><button id="">Preguntar</button></a>
+               
+              </dialog>
+            </li>
+
+            <li class="card">
+              <div class="img"><img src="../Imagenes/imagen03.jpg" alt="img" draggable="false"></div>
+              <h2>Coordinador de trabajo en alturas</h2>
+              <span>Duración: 80 horas</span>
+              <a class="btn" href="#"><button id="btn-abrir-modal_Avanzados">VER MÁS</button></a>
+              <dialog  id="modalAvanzados">
+              <h1>COORDINADOR</h1>
+              <h1>DURACION: 80  HORAS</h1>
+              <h1></h1>
+              <h4>Requisitos:</h4>
+              <h1></h1>
+              <p>Carnet eps.</p>
+              <p>Fotocopia cedula de ciudadanía.</p>
+              <p>Planilla pago seguridad social y ARL</p>
+              <h1></h1>
+              <h4>Descripción</h4>
+             <p>Personal encargado de controlar los
+               riesgos en los lugares de trabajo donde se realiza 
+               trabajo en alturas.</p>
+
+               <button id="btn_cerrar_modal">Cerrar</button>
+               <a href="https://api.whatsapp.com/send?phone=3136106128&text=Hola alturas gaval, estoy interesado En la capacitación coordinador "><button id="">Preguntar</button></a>
+               
+              </dialog>
+            </li>
+
+
+
+
+
+            
+
+
+
+
+
+          
+
+
+
+
+
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+
+        <footer class="footer">
+          <div class="container">
+          <div class="footer-row">
+          <div class="footer-links"> 
+             <h4>Compañia</h4>
+             <ul>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="https://app2.mintrabajo.gov.co/CentrosEntrenamiento/consulta_ext.aspx">Certificado</a></li>
+             </ul>           
+          </div>
+          
+          <div class="footer-links"> 
+            <h4>Cursos</h4>
+            <ul>
+             <li><a href="#">Nivel Basico</a></li>
+             <li><a href="#">Jefes De Area</a></li>
+             <li><a href="#">Nivel Avazado</a></li>
+            </ul>           
+         </div>
+
+         <div class="footer-links"> 
+          <h4>Contacto</h4>
+          <ul>
+           <li><a href="#">+(57)3193169977</a></li>
+           <li><a>souldevil123@gmail.com</a></li>
+           <li><a href="https://www.google.com/maps/dir//GAVAL+CURSOS+DE+ALTURAS,+CARRERA+69+BIS+%23+31-31+SUR+BARRIO,+Bogot%C3%A1/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e3f9f296d2b89c1:0x6beabe943617d821?sa=X&ved=2ahUKEwiN3p3ox--BAxUJm2oFHYC5A9YQ48ADegQIDxAA&ved=2ahUKEwiN3p3ox--BAxUJm2oFHYC5A9YQ48ADegQIHRAK">Cra.69 Bis 31- 31 Sur,Bogotà</a></li>
+          </ul>           
+       </div>
+
+
+       <div class="footer-links"> 
+        <h4>Redes Sociales </h4>
+        <div class="social-link">
+          <a href="https://www.facebook.com/alturas.gaval"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=3136106128&text="><i class="fab fa-whatsapp"></i></a>  
+
+        </div>
+         
+     </div>
+
+           
+       </div>
+
+
+          </div>
+          </div>
+
+
+        </footer>
+      </body>
+
+  
+  <script src="../js/script.js" defer></script>
+  </html>

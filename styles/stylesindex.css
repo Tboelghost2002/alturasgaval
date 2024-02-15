@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+*
+
+
+
+
+
+
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'nunito',sans-serif ;
+  font-size: 20px;
+  }
+
+  
+
+
+body{
+    background-color: #f0efed;
+    min-width: 400px;
+   
+}
+
+.header {
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: black; 
+}
+
+.header .nav-links a:hover{
+  color: green;
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header .btn button,
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #25D366;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+/**/.header .menu button:hover{
+    background-color: #e2f1f8;
+    color: #68f75a;
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+
+
+/*Nav Mobile*/
+
+.header a{
+    text-decoration: none;  
+     
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(129, 197, 155, 0.897);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+   
+   
+}
+
+   /*Head*/
+    
+/*Head*/
+.nav-link {
+    font-size: 11px;
+    text-decoration: none; /* Quita el subrayado predeterminado del enlace */
+    color: #02121d; /* Cambia el color del texto del enlace */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    margin-right: 10px;
+    
+  }
+  
+
+span   {
+    background-color: white;
+    display: flex;
+    justify-content: end;    
+    align-items: center;
+    padding: 0px; 
+    }
+    span .logo{
+    margin-left: 1px;
+      margin-right: 1px;
+      height: 40px;
+      width:  auto;
+      padding: 9px 25px;
+        background: #7faa8f;
+        border-radius: 50px;
+    }
+    span .logofacebook{
+        
+        margin-right: 1px;
+        height: 40px;
+        width:  auto;
+        padding: 9px 25px;
+        background: #a4b4e9;
+        border-radius: 50px;
+          
+        
+     
+      }
+      span .logo:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease 0s;
+      }
+      span .logofacebook:hover{
+        transition: all 0.3s ease 0s;
+        transform: scale(1.1);
+      }
+
+
+
+
+      /*body*/
+    
+* /* Establece estilos iniciales para todo el documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utiliza la fuente "Poppins" para todo el documento */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estiliza el contenedor principal */
+.wrapper {
+  display: flex;
+  padding: 0 28px;
+  align-items: center;
+  justify-content: center;
+  min-height: 79vh;
+  background: linear-gradient(to right top, #4b7c54,#61b56d,#4b7c54,#5cab68,#477a4f);
+}
+
+/* Estilos para los íconos en el contenedor principal */
+.wrapper i {
+  position: absolute;
+  top: 59%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  font-size: 1.25rem; 
+  text-align: center;
+  line-height: 25 px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+/* Efecto de escala al hacer clic en los íconos */
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+/* Posiciona los íconos izquierda y derecha */
+.wrapper i:first-child {
+  left: 20px;
+}
+
+.wrapper i:last-child {
+  right: 20px;
+}
+
+/* Estiliza el carrusel */
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+/* Oculta la barra de desplazamiento en navegadores webkit */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos cuando no se aplica la transición de desplazamiento */
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+/* Estilos cuando se está arrastrando el carrusel */
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+/* Estiliza los elementos dentro del carrusel */
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+/* Estiliza las tarjetas del carrusel */
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estiliza las tarjetas del carrusel */
+.carousel .card {
+  height: 450px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+
+/* Estiliza la imagen de la tarjeta */
+.carousel .card .img {
+
+  
+}
+
+.card .img img {
+  width: 380px;
+  height: 230px;
+  object-fit: cover;
+  border: 1px solid #ffffff;
+  border-radius: 10px; /*Ajusta el valor de acuerdo a la cantidad de redondeo que desees */
+}
+
+/*título y  texto de la tarjeta */
+.carousel .card h2 {
+  font-weight: 200;
+  font-size: 19px;
+  margin: 30px 1PX 5px;
+  text-align: center; 
+
+}
+.header .nav-links .boton button,
+.header .nav-links .boton {
+    font-size: 14px; 
+    font-weight: 700;
+    color: #c1e4bc;
+    padding: 9px 18px;
+    background: #153a22;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.wrapper .carousel .btn button,
+.wrapper .carousel .btn {
+  
+    font-weight: 700;
+    color: #c5e6c1;
+    padding: 2px 30px;
+    background: #4f8563;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.wrapper .btn button:hover,
+.wrapper .menu button:hover{
+    background-color: #040505;
+    color: #ffffff;
+    transform: scale(1.42);
+    
+}
+
+
+.carousel .card span {
+  color: #5f6e5a;
+  font-size: 1.31rem;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+}
+#modalJefes  {
+   /* Ancho del diálogo */
+  height: auto; /* Alto del diálogo */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#modalJefes h1 {
+  text-align: center;
+  margin: 0; }
+
+#modalJefes h3{
+    margin: 6px;
+  }
+ #modalJefes p{
+margin: 6px;
+
+
+  }
+
+
+  dialog {
+    /* Ancho del diálogo */
+   height: auto; /* Alto del diálogo */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #fff;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ }
+ 
+ #modalJefes h1 {
+   text-align: center;
+   margin: 0; }
+ 
+ #modalJefes h3{
+     margin: 6px;
+   }
+  #modalJefes p{
+ margin: 6px;
+   }
+ 
+   #modalAvanzados h1 {
+    text-align: center;
+    margin: 0; }
+  
+  #modalAvanzados h3{
+      margin: 6px;
+    }
+   #modalAvanzados p{
+  margin: 6px;
+    }
+  
+    #modalReentrenamiento h1 {
+      text-align: center;
+      margin: 0; }
+    
+    #modalReentrenamiento h3{
+        margin: 6px;
+      }
+     #modalReentrenamiento p{
+    margin: 6px;
+      }
+    
+
+      #modalCoordinador h1 {
+        text-align: center;
+        margin: 0; }
+      
+      #modalCoordinador h3{
+          margin: 6px;
+        }
+       #modalCoordinador p{
+      margin: 6px;
+        }
+
+        #modalBasicoOperativo h1 {
+          text-align: center;
+          margin: 0; }
+        
+        #modalBasicoOperativo  h3{
+            margin: 6px;
+          }
+         #modalBasicoOperativo  p{
+        margin: 6px;
+          }
+          *{
+list-style: none;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+          }
+
+
+.footer a {
+  text-decoration: none;
+  font-family: sans-serif;
+  
+}
+.footer {
+  margin-top: 28px;
+  background: linear-gradient(to right top, #19231b,#121c13,#12281c,#101c12,#254a2b);
+  padding: 80px 0;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links{
+width: 25%;
+padding: 0 15px;
+
+}
+.footer-links h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 400;
+  border-bottom: 2px solid rgb(0, 255, 191); 
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.container{
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.footer-links ul li a{
+font-size: 18px ;
+text-decoration: none;
+color: #bbbbbb;
+display: block;
+margin-bottom: 15px;
+transition: all .3 ease;
+}
+.footer-links ul li a:hover{
+  color: white;
+  padding-left: 6px;
+}
+
+.social-link a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.3);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all .5s ease;
+
+}
+
+.social-link a:hover{
+  background-color: rgb(1, 230, 255);
+}
+
+
+
+.title{
+margin-bottom: 40px;
+font-size: 35px;
+padding: 10px; 
+font-weight: 600;
+text-transform: uppercase;
+background: linear-gradient(to right top, #47d764,  #50db5e,#61d879,#53bc5d,#6ac97a);
+}
+
+h2{
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+p{
+  font-size: 15px;
+  
+ 
+  
+}
+.descripcion {
+  max-width: 45%; /* Ajusta el tamaño máximo de la imagen al contenedor */
+  margin: 25px;
+  border-radius: 10px
+  
+}
+.descripcion:hover {
+  transform: scale(1.1);
+  transition: all 2.9s ease 0s;
+}
+
+
+  
+
+.contenedor {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+.contenedor-1 {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+.contenedor-1 p{
+  margin-bottom: 160px;
+}
+
+
+
+
+.contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+
+
+.parrafoinicial {
+
+  margin-top: 50px;
+  font-size: 20px;
+ margin-left: 45px;
+ margin-right: 4px;
+ height: 20;
+ 
+}
+
+.contenedor-lista{
+margin-top: 20px;
+margin-left: 50px;
+
+}
+.contenedor-lista h1{
+  font-style: italic;
+  font-weight: normal;
+}
+.contenedor-lista h1{
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+.contenedor-lista .btn button,
+/**/.contenedor-lista .menu button{
+  margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #25D366;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;}
+
+    .contenedor-lista .btn button:hover
+   {
+      background-color: #090d0e;
+      color: #68f75a;
+      transform: scale(1.1);
+  }
